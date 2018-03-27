@@ -50,7 +50,7 @@ $handle = fopen ("php://stdin", "r");
 echo ("How many bits you want each item to work on?: ");
 fscanf($handle, "%d", $bits);
 
-echo ("How many items you do want to sort binary?: ");
+echo ("How many items do you want to sort binary?: ");
 fscanf($handle, "%d", $n);
 
 $numbers = array();
