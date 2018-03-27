@@ -48,15 +48,15 @@ function countBits($value)
 $handle = fopen ("php://stdin", "r");
 
 echo ("How many bits you want each item to work on?: ");
-fscanf($handle, "%d",$bits);
+fscanf($handle, "%d", $bits);
 
 echo ("How many items you do want to sort binary?: ");
-fscanf($handle, "%d",$n);
+fscanf($handle, "%d", $n);
 
 $numbers = array();
 for($numbers_i = 0; $numbers_i < $n; $numbers_i++){
     echo ("Insert item #" . ($numbers_i+1) ." please: ");
-    fscanf($handle,"%d",$numbers[]);
+    fscanf($handle, "%d", $numbers[]);
 }
 
 $result = binarySort($numbers, $bits);
